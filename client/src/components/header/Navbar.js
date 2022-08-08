@@ -4,7 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Users from '../SDE1/SDE1';
+import SDE1 from '../SDE1/SDE1';
 import PersistentDrawerLeft from '../sidebar/Sidebar';
 
 function TabPanel(props) {
@@ -63,7 +63,7 @@ export default function BasicTabs() {
         Item One
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Users />
+        <SDE1 />
       </TabPanel>
       <TabPanel value={value} index={2}>
         Item Three
