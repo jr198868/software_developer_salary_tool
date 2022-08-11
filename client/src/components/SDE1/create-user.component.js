@@ -5,17 +5,17 @@ export default class CreateUser extends Component {
   constructor(props) {
     super(props);
 
-    this.onChangeUsername = this.onChangeUsername.bind(this);
+    this.onChangeCompanyname = this.onChangeCompanyname.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
 
     this.state = {
-      username: ''
+      companyname: ''
     }
   }
 
-  onChangeUsername(e) {
+  onChangeCompanyname(e) {
     this.setState({
-      username: e.target.value
+      companyname: e.target.value
     })
   }
 
@@ -23,7 +23,7 @@ export default class CreateUser extends Component {
     e.preventDefault();
 
     const user = {
-      username: this.state.username
+      companyname: this.state.companyname
     }
 
     console.log(user);
@@ -32,7 +32,7 @@ export default class CreateUser extends Component {
       .then(res => console.log(res.data));
 
     this.setState({
-      username: ''
+      companyname: ''
     })
   }
 
@@ -42,12 +42,12 @@ export default class CreateUser extends Component {
         <h3>Create New User</h3>
         <form onSubmit={this.onSubmit}>
           <div className="form-group"> 
-            <label>Username: </label>
+            <label>Company Name: </label>
             <input  type="text"
                 required
                 className="form-control"
-                value={this.state.username}
-                onChange={this.onChangeUsername}
+                value={this.state.companyname}
+                onChange={this.onChangeCompanyname}
                 />
           </div>
           <div className="form-group">
