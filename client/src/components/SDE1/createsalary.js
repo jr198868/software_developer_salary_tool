@@ -71,7 +71,7 @@ export default class CreateSalary extends Component {
   }
 
   onSubmit(e) {
-    //e.preventDefault();
+    e.preventDefault();
 
     const salary = {
       companyname: this.state.companyname,
@@ -88,6 +88,7 @@ export default class CreateSalary extends Component {
 
       alert('Salary has been successfully added');
       
+      window.location = '/';
 
   }
 
@@ -97,7 +98,7 @@ export default class CreateSalary extends Component {
 
     return (
     <div>
-    <Typography component={"span"} variant={'h6'} sx={{ fontWeight: 'bold' }}> Company Salary Record</Typography>
+    <Typography component={"span"} variant={'h6'} sx={{ fontWeight: 'bold' }}> Company Salary Record</Typography><br /><br />
       <form onSubmit={this.onSubmit}>
         <div className="form-group"> 
           <label>Company Name: </label>
@@ -133,7 +134,7 @@ export default class CreateSalary extends Component {
               value={this.state.bonus}
               onChange={this.onChangeBonus}
               />
-        </div><br />
+        </div><br /><br />
 
         <div className="form-group">
           <input type="submit" value="Create Salary Record" className="btn btn-primary" style = {{background: '#5D3FD3'}}/>

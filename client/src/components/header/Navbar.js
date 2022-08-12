@@ -5,6 +5,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import SDE1 from '../SDE1/SDE1';
+import SDE2 from '../SDE2/SDE2'
 import PersistentDrawerLeft from '../sidebar/Sidebar';
 
 function TabPanel(props) {
@@ -66,7 +67,7 @@ export default function BasicTabs() {
         <SDE1 />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <SDE2 />
       </TabPanel>
     </Box>
   );

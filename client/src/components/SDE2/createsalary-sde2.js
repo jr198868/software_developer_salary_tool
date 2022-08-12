@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Typography } from '@mui/material';
+import './createsalary-sde2.css';
+import Piechart from '../SDE2/Piechart';
 
 
-export default class CreateSalary extends Component {
+
+export default class CreateSalarysde2 extends Component {
   constructor(props) {
     super(props);
 
@@ -16,9 +19,9 @@ export default class CreateSalary extends Component {
 
     this.state = {
       companyname: '',
-      base: 0,
-      stock: 0,
-      bonus: 0,
+      base: 120000,
+      stock: 50000,
+      bonus: 30000,
       date: new Date(),
       users: []
     }
@@ -96,8 +99,9 @@ export default class CreateSalary extends Component {
     
 
     return (
-    <div>
-    <Typography component={"span"} variant={'h6'} sx={{ fontWeight: 'bold' }}> Company Salary Record</Typography>
+    <div class="row">
+    <div class="column">
+    <Typography component={"span"} variant={'h6'} sx={{ fontWeight: 'bold' }}> Company Salary Record</Typography><br /><br />
       <form onSubmit={this.onSubmit}>
         <div className="form-group"> 
           <label>Company Name: </label>
@@ -107,16 +111,17 @@ export default class CreateSalary extends Component {
               onChange={this.onChangeCompanyname}
               />
         </div>
-        <div className="form-group"> 
+        <div className="form-group">
           <label>$ Base: </label>
           <input  type="text"
               required
               className="form-control"
+              id = "base-sde2"
               value={this.state.base}
               onChange={this.onChangeBase}
               />
         </div>
-        <div className="form-group"> 
+        <div className="form-group">
           <label>$ Stock (/yr): </label>
           <input  type="text"
               required
@@ -133,14 +138,20 @@ export default class CreateSalary extends Component {
               value={this.state.bonus}
               onChange={this.onChangeBonus}
               />
-        </div><br />
+        </div><br /><br />
 
         <div className="form-group">
           <input type="submit" value="Create Salary Record" className="btn btn-primary" style = {{background: '#5D3FD3'}}/>
         </div>
       </form>
     </div>
-    
+    <div class="column">
+
+      <div>
+        <Piechart passbase = {this.state.base} passbonus = {this.state.bonus} passstock = {this.state.stock}/>
+      </div>
+    </div>
+    </div>
     )
   }
 }
