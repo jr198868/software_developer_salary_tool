@@ -17,7 +17,7 @@ const Salary = props => (
 )
 
 
-export default class SalaryList extends Component {
+export default class SalaryListsde2 extends Component {
 
 
   
@@ -30,7 +30,7 @@ export default class SalaryList extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/salarys/')
+    axios.get('http://localhost:5000/salarys-sde2/')
       .then(response => {
         this.setState({ salarys: response.data })
       })
@@ -40,7 +40,7 @@ export default class SalaryList extends Component {
   }
 
   deleteSalary(id) {
-    axios.delete('http://localhost:5000/salarys/'+id)
+    axios.delete('http://localhost:5000/salarys-sde2/'+id)
       .then(response => { console.log(response.data)});
 
     this.setState({
