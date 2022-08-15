@@ -16,8 +16,8 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import HomeSharpIcon from '@mui/icons-material/HomeSharp';
+import ApartmentIcon from '@mui/icons-material/Apartment';
 
 const drawerWidth = 240;
 
@@ -115,32 +115,37 @@ export default function PersistentDrawerLeft() {
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
         </DrawerHeader>
-        <Divider />
-        <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
+
+              <Divider />
+                <List>
+                <ListItem disablePadding>
+                    <IconButton sx={{ fontSize: "16px" }} style={{margin: 6}}>
+                      <HomeSharpIcon style={{margin: 2}}/>
+                        <ListItemIcon onClick={()=> window.open("http://imiha.bluesphere.bio/", "_self")}>
+                            Home
+                        </ListItemIcon>
+                    </IconButton>
+                </ListItem>
+                <ListItem disablePadding>
+                    <IconButton sx={{ fontSize: "16px" }} style={{margin: 6}}>
+                      <ApartmentIcon style={{margin: 2}}/>
+                        <ListItemIcon onClick={()=> window.open("https://hematopoietic.bluesphere.bio/", "_self")}>
+                          Candidate Company List
+                        </ListItemIcon>
+                    </IconButton>
+                </ListItem>
+                <ListItem disablePadding> 
+                    <IconButton sx={{ fontSize: "16px" }} style={{margin: 6}}>
+                      <ApartmentIcon style={{margin: 2}}/>
+                        <ListItemIcon onClick={()=> window.open("http://imiha.bluesphere.bio/imiha/sawamihaInformation", "_self")}>
+                          Unicorn Company List
+                        </ListItemIcon>
+                    </IconButton>
+                </ListItem>
+                
+                </List>
+                
+                <Divider />
       </Drawer>
         <DrawerHeader />
     </Box>

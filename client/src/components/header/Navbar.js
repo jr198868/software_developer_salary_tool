@@ -7,6 +7,8 @@ import Box from '@mui/material/Box';
 import SDE1 from '../SDE1/SDE1';
 import SDE2 from '../SDE2/SDE2'
 import PersistentDrawerLeft from '../sidebar/Sidebar';
+import Overviewsde1 from '../overview/Overview-sde1';
+import Overviewsde2 from '../overview/Overview-sde2';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -61,7 +63,9 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        Item One
+        <Overviewsde1 />
+        <Overviewsde2 />
+
       </TabPanel>
       <TabPanel value={value} index={1}>
         <SDE1 />
