@@ -1,6 +1,6 @@
 import React, {Component, useState, memo } from "react";
 import { PieChart } from "react-minimal-pie-chart";
-import "../SDE2/Piechart.css";
+import "./Piechart.css";
 
 
 const labels = [

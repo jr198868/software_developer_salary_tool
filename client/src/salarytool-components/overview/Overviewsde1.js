@@ -2,10 +2,11 @@ import React, { Component }from "react";
 import Chart from 'react-apexcharts';
 import axios from 'axios';
 
-var baselist = []
-var stocklist = []
-var bonuslist = []
-var companylist = []
+
+var companymap = new Map()
+var basemap = new Map()
+var stockmap = new Map()
+var bonusmap = new Map()
 
 const Salary = props => (
    
@@ -38,17 +39,28 @@ export default class Overviewsde1 extends Component {
       }
 
       salaryList() {
+
+
+
+
         for (let i = 0; i<this.state.salarys.length; i++) {
+            for (let j = 0; j<Object.entries(this.state.salarys).length; j++) {
+                basemap.set(Object.entries(this.state.salarys)[j][1]['companyname'], Object.entries(this.state.salarys)[j][1]['base'])
+                const baselist = Array.from(basemap.values())
+
+                stockmap.set(Object.entries(this.state.salarys)[j][1]['companyname'],Object.entries(this.state.salarys)[j][1]['stock'])
+                const stocklist = Array.from(stockmap.values())
+                
+                bonusmap.set(Object.entries(this.state.salarys)[j][1]['companyname'],Object.entries(this.state.salarys)[j][1]['bonus'])
+                const bonulist = Array.from(bonusmap.values())
+                
+                companymap.set(Object.entries(this.state.salarys)[j][1]['companyname'],Object.entries(this.state.salarys)[j][1]['companyname'])
+                const companylist = Array.from(companymap.values())
+            }
             
-            baselist.push(this.state.salarys[i]['base'])
-            stocklist.push(this.state.salarys[i]['stock'])
-            bonuslist.push(this.state.salarys[i]['bonus'])
-            companylist.push(this.state.salarys[i]['companyname'])
-            baselist = baselist.slice(0, this.state.salarys.length-1)
-            stocklist = stocklist.slice(0, this.state.salarys.length-1)
-            bonuslist = bonuslist.slice(0, this.state.salarys.length-1)
-            companylist = companylist.slice(0, this.state.salarys.length-1)
         }
+        
+    console.log(basemap)
         
         
         return this.state.salarys.map(currentsalary => {
@@ -67,7 +79,7 @@ export default class Overviewsde1 extends Component {
         <React.Fragment>
             <div className="container-fluid mb-3">
                 <div>{ this.salaryList() }</div>
-                <h2>Stacked Bar Chart for SDE I Salary</h2>
+                <h3 style={{ fontWeight: 'bold' }}>Stacked Bar Chart for SDE I Salary</h3>
                 <Chart
                 type="bar"
                 width={1349}
@@ -75,15 +87,15 @@ export default class Overviewsde1 extends Component {
                 series={[
                     {
                         name:"$ Base",
-                        data: baselist,
+                        data: Array.from(basemap.values()),
                     },
                     {
                         name:"$ Stock (/yr)",
-                        data: stocklist,
+                        data: Array.from(stockmap.values()),
                     },
                     {
                         name:"$ Bonus",
-                        data: bonuslist,
+                        data: Array.from(bonusmap.values()),
                     },
 
 
@@ -114,18 +126,18 @@ export default class Overviewsde1 extends Component {
                         },
                         labels: {
                             style: {
-                                fontSize: '16px'
+                                fontSize: '18px'
                             }
                         },
-                        categories:companylist
+                        categories: Array.from(companymap.values())
                     },
                     yaxis:{
-                        title:{
-                            text:"Companies",
-                            style: {
-                                fontSize: '14px'
-                            },
-                        },
+                        // title:{
+                        //     text:"Companies",
+                        //     style: {
+                        //         fontSize: '14px'
+                        //     },
+                        // },
 
                         labels: {
                             style: {

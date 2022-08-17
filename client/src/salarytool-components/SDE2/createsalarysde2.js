@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Typography } from '@mui/material';
-import './createsalary-sde2.css';
-import Piechart from '../SDE2/Piechart';
+import './createsalarysde2.css';
+import Piechart from './Piechart';
 
 
 

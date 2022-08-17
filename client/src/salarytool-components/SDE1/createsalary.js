@@ -98,7 +98,9 @@ export default class CreateSalary extends Component {
 
     return (
     <div>
-    <Typography component={"span"} variant={'h6'} sx={{ fontWeight: 'bold' }}> Company Salary Record</Typography><br /><br />
+    <Typography component={"span"} variant={'h6'} sx={{ fontWeight: 'bold' }} > 
+      Company Salary Record
+    </Typography><br /><br />
       <form onSubmit={this.onSubmit}>
         <div className="form-group"> 
           <label>Company Name: </label>

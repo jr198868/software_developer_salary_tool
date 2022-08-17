@@ -61,7 +61,7 @@ export default class SalaryList extends Component {
 
     return (
       <div>
-        <br /><br />s 
+        <br /><br />
         <Typography component={"span"} variant={'h6'} sx={{ fontWeight: 'bold' }}>
           Software Development Engineer I Salary by Company
         </Typography><br /><br />

@@ -13,9 +13,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
 import HomeSharpIcon from '@mui/icons-material/HomeSharp';
 import ApartmentIcon from '@mui/icons-material/Apartment';
 
@@ -121,17 +119,17 @@ export default function PersistentDrawerLeft() {
                 <ListItem disablePadding>
                     <IconButton sx={{ fontSize: "16px" }} style={{margin: 6}}>
                       <HomeSharpIcon style={{margin: 2}}/>
-                        <ListItemIcon onClick={()=> window.open("http://imiha.bluesphere.bio/", "_self")}>
+                        <a href = "/home" style={{textDecoration: 'none', color: "#585858"}}>
                             Home
-                        </ListItemIcon>
+                        </a>
                     </IconButton>
                 </ListItem>
                 <ListItem disablePadding>
                     <IconButton sx={{ fontSize: "16px" }} style={{margin: 6}}>
                       <ApartmentIcon style={{margin: 2}}/>
-                        <ListItemIcon onClick={()=> window.open("https://hematopoietic.bluesphere.bio/", "_self")}>
+                        <a href = "/candidatecompany" style={{textDecoration: 'none', color: "#585858"}}>
                           Candidate Company List
-                        </ListItemIcon>
+                        </a>
                     </IconButton>
                 </ListItem>
                 <ListItem disablePadding> 
