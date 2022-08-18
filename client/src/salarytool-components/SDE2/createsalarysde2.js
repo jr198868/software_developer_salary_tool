@@ -15,6 +15,7 @@ export default class CreateSalarysde2 extends Component {
     this.onChangeStock = this.onChangeStock.bind(this);
     this.onChangeBonus = this.onChangeBonus.bind(this);
     this.onChangeDate = this.onChangeDate.bind(this);
+    this.onChangSource = this.onChangSource.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
 
     this.state = {
@@ -22,6 +23,7 @@ export default class CreateSalarysde2 extends Component {
       base: 120000,
       stock: 50000,
       bonus: 30000,
+      source: '',
       date: new Date(),
       users: []
     }
@@ -73,6 +75,12 @@ export default class CreateSalarysde2 extends Component {
     })
   }
 
+  onChangSource(e) {
+    this.setState({
+      source: e.target.value
+    })
+  }
+
   onSubmit(e) {
     //e.preventDefault();
 
@@ -81,7 +89,8 @@ export default class CreateSalarysde2 extends Component {
       base: this.state.base,
       stock: this.state.stock,
       bonus: this.state.bonus,
-      date: this.state.date
+      date: this.state.date,
+      source: this.state.source,
     }
 
     
@@ -137,6 +146,15 @@ export default class CreateSalarysde2 extends Component {
               className="form-control"
               value={this.state.bonus}
               onChange={this.onChangeBonus}
+              />
+        </div>
+        <div className="form-group">
+          <label>$ Data source: </label>
+          <input 
+              type="text" 
+              className="form-control"
+              value={this.state.source}
+              onChange={this.onChangSource}
               />
         </div><br /><br />
 

@@ -2,21 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import * as d3 from 'd3';
 import companylist from './assets/unicorn_without_whiteboard.csv';
-
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import TabContext from '@mui/lab/TabContext';
-import TabPanel from '@mui/lab/TabPanel';
-import { styled } from '@mui/material/styles';
-
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
-
 
 
 const columns = [
@@ -24,13 +10,11 @@ const columns = [
   { field: 'CompanyName',
     headerName: 'Company Name',
     width: 200,
-    editable: true,
   },
   {
     field: 'Location',
     headerName: 'Location',
     width: 300,
-    editable: true,
   },
   {
     field: 'InterviewDescription',

@@ -10,6 +10,7 @@ const Salary = props => (
     <td>{props.salary.stock}</td>
     <td>{props.salary.bonus}</td>
     <td>{props.salary.date.substring(0,10)}</td>
+    <td>{props.salary.source}</td>
     <td>
     <a href = '#' onClick={() => { props.deleteSalary(props.salary._id) }} style={{ textDecoration: 'none' }}>delete</a>
     </td>
@@ -75,6 +76,7 @@ export default class SalaryListsde2 extends Component {
               <th>Stock ($/yr)</th>
               <th>Bonus ($)</th>
               <th>Creation Date</th>
+              <th>Data source</th>
               <th>Delete</th>
             </tr>
           </thead>
