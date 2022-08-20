@@ -119,7 +119,7 @@ export default function PersistentDrawerLeft() {
                 <ListItem disablePadding>
                     <IconButton sx={{ fontSize: "16px" }} style={{margin: 6}}>
                       <HomeSharpIcon style={{margin: 2}}/>
-                        <a href = "/home" style={{textDecoration: 'none', color: "#585858"}}>
+                        <a href = "/home" style={{textDecoration: 'none', color: "#585858"}} target="_blank">
                             Home
                         </a>
                     </IconButton>
@@ -127,7 +127,7 @@ export default function PersistentDrawerLeft() {
                 <ListItem disablePadding>
                     <IconButton sx={{ fontSize: "16px" }} style={{margin: 6}}>
                       <ApartmentIcon style={{margin: 2}}/>
-                        <a href="/candidatecompany" style={{textDecoration: 'none', color: "#585858"}}>
+                        <a href="/candidatecompany" style={{textDecoration: 'none', color: "#585858"}} target="_blank">
                           Candidate Company List
                         </a>
                     </IconButton>
