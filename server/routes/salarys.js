@@ -13,6 +13,7 @@ router.route('/add').post((req, res) => {
   const stock = req.body.stock;
   const bonus = Number(req.body.bonus);
   const date = Date.parse(req.body.date);
+  const source = req.body.source;
 
   const newSalary = new Salary({
     companyname,
@@ -20,6 +21,7 @@ router.route('/add').post((req, res) => {
     stock,
     bonus,
     date,
+    source,
   });
 
   newSalary.save()
@@ -47,6 +49,8 @@ router.route('/update/:id').post((req, res) => {
       salary.stock = req.body.stock;
       salary.bonus = Number(req.body.bonus);
       salary.date = Date.parse(req.body.date);
+      salary.source = req.body.source;
+
 
       salary.save()
         .then(() => res.json('Salary updated!'))

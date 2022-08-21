@@ -8,6 +8,7 @@ const salarySchema = new Schema({
   stock: { type: Number, required: true },
   bonus: { type: Number, required: true },
   date: { type: Date, required: true },
+  source: {type: String,required: true },
 }, {
   timestamps: true,
 });
