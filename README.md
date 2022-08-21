@@ -1,6 +1,9 @@
 # software_developer_salary_tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+About this project：
+Frontend tech stack: React.js
+Backend tech stack: Node.js
+Database: MongoDB
 
 Live Demo: 
 
