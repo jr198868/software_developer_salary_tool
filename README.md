@@ -2,7 +2,7 @@
 
 ## About this project 🚀：
 Frontend tech stack: React.js  
-Backend tech stack: Node.js  
+Backend tech stack: Node.js Express.js  
 Database: MongoDB  
 
 Live Demo: 
