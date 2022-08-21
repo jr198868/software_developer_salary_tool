@@ -1,12 +1,11 @@
 # software_developer_salary_tool
-# Raymond Portfolio
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Live Demo: https://main.dbx4d1npx5kez.amplifyapp.com/ 
 
 
-![alt text](https://github.com/jr198868/software_developer_salary_tool/client/src/salarytool-components/assets/SDEsalarytool.jpg)
+![alt text](https://github.com/software_developer_salary_tool/client/src/salarytool-components/assets/SDEsalarytool.jpg)
 
 
 ## Project Structure 🚀
