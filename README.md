@@ -7,8 +7,6 @@ Live Demo:
 
 ![alt text](https://github.com/jr198868/software_developer_salary_tool/blob/main/SDEsalarytool.jpg)
 
-![alt text](https://github.com/jr198868/2021_christmas_poker/blob/main/src/image/2021%20Christmas%20Poker.jpeg)
-
 
 ## Project Structure 🚀
 
