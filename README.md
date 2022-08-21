@@ -11,82 +11,77 @@ Live Demo:
 ## Project Structure 🚀
 
 ```sh
-ray_portfolio/
+software_developer_salary_tool/
 ├── README.md
-├── package-lock.json
-├── package.json
-├── public
-│   ├── index.html
-│   └── robots.txt
-└── src
-    ├── App.css
-    ├── App.js
-    ├── Codedemo1.js
-    ├── Codedemo2.js
-    ├── Portfolio.js
-    ├── assets  
-    ├── components
-    │   ├── aboutme
-    │   │   ├── Aboutme.css
-    │   │   └── Aboutme.jsx
-    │   ├── codesample
-    │   │   ├── Codesample.css
-    │   │   └── Codesample.jsx
-    │   ├── contact
-    │   │   ├── Contact.css
-    │   │   └── Contact.jsx
-    │   ├── footer
-    │   │   ├── Footer.css
-    │   │   ├── Footer.jsx
-    │   │   └── test.txt
-    │   ├── header
-    │   │   ├── Header.css
-    │   │   └── Header.jsx
-    │   ├── languagesframeworks
-    │   │   ├── Languagesframeworks.css
-    │   │   └── Languagesframeworks.jsx
-    │   ├── myproject
-    │   │   ├── Myproject.css
-    │   │   ├── Myproject.jsx
-    │   │   └── Project.jsx
-    │   ├── navbar
-    │   │   ├── Navbar.css
-    │   │   └── Navbar.jsx
-    │   └── radar
-    │       ├── Radar.css
-    │       └── Radar.jsx
-    ├── index.css
-    ├── index.js
-    ├── portfolio_code_demo1
-    │   ├── arithmetic
-    │   │   ├── Arithmetic.css
-    │   │   └── Arithmetic.jsx
-    │   ├── description
-    │   │   ├── Description.css
-    │   │   └── Description.jsx
-    │   ├── header
-    │   │   ├── Header.css
-    │   │   └── Header.jsx
-    │   └── portfolio_code_demo1.css
-    └── portfolio_code_demo2
-        ├── assets
-        │   ├── IMG195.jpg
-        │   ├── IMG196.jpg
-        │   ├── IMG197.jpg
-        │   ├── IMG198.jpg
-        │   ├── IMG199.jpg
-        │   └── IMG200.jpg
-        ├── card
-        │   ├── Card.css
-        │   └── Card.jsx
-        ├── cardinstruction
-        │   ├── Cardinstruction.css
-        │   └── Cardinstruction.jsx
-        └── tripcard
-            ├── Tripcard_raw.css
-            └── Tripcard_raw.jsx
+├── SDEsalarytool.jpg
+├── client
+│   ├── README.md
+│   ├── fetchdata.js
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── public
+│   │   └── index.html
+│   └── src
+│       ├── App.css
+│       ├── App.js
+│       ├── candidatecompany-components
+│       │   ├── Candidatecompany.js
+│       │   ├── assets
+│       │   │   └── unicorn_without_whiteboard.csv
+│       │   ├── header
+│       │   │   ├── Candidatecompanynavbar.css
+│       │   │   └── Candidatecompanynavbar.js
+│       │   └── sidebar
+│       │       ├── Sidebar.css
+│       │       └── Sidebar.js
+│       ├── index.css
+│       ├── index.js
+│       └── salarytool-components
+│           ├── SDE1
+│           │   ├── SDE1.css
+│           │   ├── SDE1.js
+│           │   ├── Updatesalary.js
+│           │   ├── create-user.component.js
+│           │   ├── createsalary.js
+│           │   └── salarylist.component.js
+│           ├── SDE2
+│           │   ├── Piechart.css
+│           │   ├── Piechart.js
+│           │   ├── SDE2.css
+│           │   ├── SDE2.js
+│           │   ├── createsalarysde2.css
+│           │   ├── createsalarysde2.js
+│           │   ├── createusersde2.js
+│           │   └── salarylist-sde2.js
+│           ├── assets
+│           │   └── SDEsalarytool.jpeg
+│           ├── header
+│           │   ├── Salarytoolnavbar.css
+│           │   └── Salarytoolnavbar.js
+│           ├── overview
+│           │   ├── Overviewsde1.css
+│           │   ├── Overviewsde1.js
+│           │   └── Overviewsde2.js
+│           └── sidebar
+│               ├── Sidebar.css
+│               └── Sidebar.js
+└── server
+    ├── model
+    │   ├── salary-sde2.model.js
+    │   ├── salary.model.js
+    │   ├── users-sde2.model.js
+    │   └── users.model.js
+    ├── package-lock.json
+    ├── package.json
+    ├── routes
+    │   ├── fetchdata.js
+    │   ├── salarys-sde2.js
+    │   ├── salarys.js
+    │   ├── users-sde2.js
+    │   └── users.js
+    └── server.js
 
-22 directories, 89 files
+17 directories, 51 files
 ```
 
 ## Getting Started 🚀
