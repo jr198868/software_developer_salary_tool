@@ -1,8 +1,8 @@
 # software_developer_salary_tool
 
 ## About this project 🚀：
-Frontend tech stack: React.js  
-Backend tech stack: Node.js Express.js  
+Front-end tech stack: React.js  
+Back-end tech stack: Node.js Express.js  
 Database: MongoDB  
 
 Live Demo: 
