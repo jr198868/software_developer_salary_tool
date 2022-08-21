@@ -1,9 +1,9 @@
 # software_developer_salary_tool
 
-# About this project：
-## Frontend tech stack: React.js
-## Backend tech stack: Node.js
-## Database: MongoDB
+## About this project：
+Frontend tech stack: React.js  
+Backend tech stack: Node.js  
+Database: MongoDB  
 
 Live Demo: 
 
