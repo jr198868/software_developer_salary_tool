@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0da4edf0.css",
+    "main.js": "/static/js/main.66a90289.js",
+    "static/media/unicorn_without_whiteboard.csv": "/static/media/unicorn_without_whiteboard.62b290e3c7a6033bc9d4.csv",
+    "index.html": "/index.html",
+    "main.0da4edf0.css.map": "/static/css/main.0da4edf0.css.map",
+    "main.66a90289.js.map": "/static/js/main.66a90289.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0da4edf0.css",
+    "static/js/main.66a90289.js"
+  ]
+}
