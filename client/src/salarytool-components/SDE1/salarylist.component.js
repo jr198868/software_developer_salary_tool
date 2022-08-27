@@ -31,7 +31,8 @@ export default class SalaryList extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/salarys/')
+    // axios.get('http://localhost:5000/salarys/')
+    axios.get('https://software-developer-salary-tool.herokuapp.com/salarys/')
       .then(response => {
         this.setState({ salarys: response.data })
       })
@@ -41,7 +42,8 @@ export default class SalaryList extends Component {
   }
 
   deleteSalary(id) {
-    axios.delete('http://localhost:5000/salarys/'+id)
+    // axios.delete('http://localhost:5000/salarys/'+id)
+    axios.delete('https://software-developer-salary-tool.herokuapp.com/salarys/'+id)
       .then(response => { console.log(response.data)});
 
     this.setState({

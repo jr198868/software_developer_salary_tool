@@ -30,7 +30,8 @@ export default class CreateSalarysde2 extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/users-sde2/')
+    // axios.get('http://localhost:5000/users-sde2/')
+    axios.get('https://software-developer-salary-tool.herokuapp.com/users-sde2/')
       .then(response => {
         if (response.data.length > 0) {
           this.setState({
@@ -95,7 +96,8 @@ export default class CreateSalarysde2 extends Component {
 
     
 
-    axios.post('http://localhost:5000/salarys-sde2/add', salary)
+    // axios.post('http://localhost:5000/salarys-sde2/add', salary)
+    axios.post('https://software-developer-salary-tool.herokuapp.com/salarys-sde2/add', salary)
       .then(res => console.log(res.data));
 
       alert('Salary has been successfully added');
