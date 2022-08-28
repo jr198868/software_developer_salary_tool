@@ -5,8 +5,10 @@ Front-end tech stack: React.js
 Back-end tech stack: Node.js Express.js  
 Database: MongoDB  
 
-Live Demo: 
+Frontend deployment: Netlify
+Backend deployment: Heroku
 
+Live Demo: https://fascinating-dolphin-f1cb09.netlify.app/#
 
 ![alt text](https://github.com/jr198868/software_developer_salary_tool/blob/main/SDEsalarytool.jpg)
 
