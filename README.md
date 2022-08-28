@@ -5,7 +5,7 @@ Front-end tech stack: React.js
 Back-end tech stack: Node.js Express.js  
 Database: MongoDB  
 
-Frontend deployment: Netlify
+Frontend deployment: Netlify  
 Backend deployment: Heroku
 
 Live Demo: https://fascinating-dolphin-f1cb09.netlify.app/#
