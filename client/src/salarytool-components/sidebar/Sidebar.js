@@ -135,7 +135,7 @@ export default function PersistentDrawerLeft() {
                 <ListItem disablePadding> 
                     <IconButton sx={{ fontSize: "16px" }} style={{margin: 6}}>
                       <ApartmentIcon style={{margin: 2}}/>
-                        <ListItemIcon onClick={()=> window.open("http://imiha.bluesphere.bio/imiha/sawamihaInformation", "_self")}>
+                        <ListItemIcon onClick={()=> window.open("/", "_self")}>
                           Unicorn Company List
                         </ListItemIcon>
                     </IconButton>
