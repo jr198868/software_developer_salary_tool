@@ -8,7 +8,7 @@ Database: MongoDB
 Frontend deployment: Netlify  
 Backend deployment: Heroku
 
-Live Demo: https://fascinating-dolphin-f1cb09.netlify.app/#
+Live Demo: https://sdesalarytool.netlify.app/
 
 ![alt text](https://github.com/jr198868/software_developer_salary_tool/blob/main/SDEsalarytool.jpg)
 
@@ -90,12 +90,12 @@ software_developer_salary_tool/
 ```
 
 ## Getting Started 🚀
-### How to check my portfolio on local computer 🚀
+### How to check software_developer_salary_tool on a local computer 🚀
 
 ```sh
-$ git clone git@github.com:jr198868/ray_portfolio.git 
+$ git clone git@github.com:jr198868/software_developer_salary_tool.git 
 
-$ cd ray_portfolio/
+$ cd software_developer_salary_tool/
 
 $ npm install package.json
 
