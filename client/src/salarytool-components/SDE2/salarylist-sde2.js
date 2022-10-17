@@ -31,7 +31,7 @@ export default class SalaryListsde2 extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/salarys-sde2/')
+    axios.get('http://localhost:4000/salarys-sde2/')
       .then(response => {
         this.setState({ salarys: response.data })
       })
@@ -41,7 +41,7 @@ export default class SalaryListsde2 extends Component {
   }
 
   deleteSalary(id) {
-    axios.delete('http://localhost:5000/salarys-sde2/'+id)
+    axios.delete('http://localhost:4000/salarys-sde2/'+id)
       .then(response => { console.log(response.data)});
 
     this.setState({
@@ -66,7 +66,7 @@ export default class SalaryListsde2 extends Component {
         <br /><br />
         
         <Typography component={"span"} variant={'h6'} sx={{ fontWeight: 'bold' }}>
-          Software Development Engineer II Salary by Company
+          Software Development Engineer II Salary Record
         </Typography><br /><br />
         <table className="table">
           <thead className="thead-light">

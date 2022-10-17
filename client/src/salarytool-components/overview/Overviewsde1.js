@@ -10,12 +10,7 @@ var bonusmap = new Map()
 
 const Salary = props => (
    
-    <div>
-      {/* <div>{props.salary.companyname}</div>
-      <div>{props.salary.base}</div>
-      <div>{props.salary.stoock}</div>
-      <div>{props.salary.binus}</div>     */}
-    </div>
+    <div></div>
 )
 
 
@@ -28,8 +23,8 @@ export default class Overviewsde1 extends Component {
       }
     
       componentDidMount() {
-        // axios.get('http://localhost:5000/salarys/')
-        axios.get(' https://software-developer-salary-tool.herokuapp.com/salarys/')
+        axios.get('http://localhost:4000/salarys/')
+        // axios.get(' https://software-developer-salary-tool.herokuapp.com/salarys/')
           .then(response => {
             this.setState({ salarys: response.data })
           })
@@ -61,8 +56,6 @@ export default class Overviewsde1 extends Component {
             
         }
         
-    console.log(basemap)
-        
         
         return this.state.salarys.map(currentsalary => {
             return <Salary salary={currentsalary} key={currentsalary._id}/>;
@@ -83,8 +76,8 @@ export default class Overviewsde1 extends Component {
                 <h3 style={{ fontWeight: 'bold' }}>Stacked Bar Chart for SDE I Salary</h3>
                 <Chart
                 type="bar"
-                width={1349}
-                height={560}
+                width={580}
+                height={540}
                 series={[
                     {
                         name:"$ Base",

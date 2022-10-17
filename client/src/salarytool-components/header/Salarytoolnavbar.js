@@ -9,6 +9,9 @@ import SDE2 from '../SDE2/SDE2'
 import PersistentDrawerLeft from '../sidebar/Sidebar';
 import Overviewsde1 from '../overview/Overviewsde1';
 import Overviewsde2 from '../overview/Overviewsde2';
+import { Container, Row, Col } from 'react-grid-system';
+import Overviewsde1index from '../overview/Overview-sde1index';
+import Overviewsde2index from '../overview/Overview-sde2index';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -63,9 +66,25 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <Overviewsde1 /><br />
-        <Overviewsde2 />
-
+        <Container>
+          <Row>
+            <Col sm={6} style={{alignItems: 'left', justifyContent: 'left'}}>
+              <Overviewsde1 />
+            </Col>
+            <Col sm={6} style={{alignItems: 'rigt', justifyContent: 'right'}}>
+              <Overviewsde2 /><br />
+            </Col>
+          </Row>
+          <Row>
+            <Col sm={8}>
+              <Overviewsde1index /><br />
+            </Col>
+            <Col sm={8}>
+              <Overviewsde2index />
+            </Col>
+          </Row>
+        </Container>
+        
       </TabPanel>
       <TabPanel value={value} index={1}>
         <SDE1 />

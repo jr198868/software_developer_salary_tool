@@ -62,15 +62,7 @@ export default function DataGridDemo() {
   var newdata = []
   d3.csv(companylist, (data) => {
     var newdata = Object.assign([], data)
-        
- 
-    
-  //     rowsmap['id'] = data['id'];
-  //     rowsmap['Company Name'] = data['Company Name'];
-  //     rowsmap['Location'] = data['Location'];
-  //     rowsmap['Interview Description'] = data['Interview Description'];
 
-  //     //console.log(rows)
 })
 
   return (
