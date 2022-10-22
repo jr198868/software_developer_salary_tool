@@ -158,7 +158,7 @@ export default class CreateSalarysde2 extends Component {
               value={this.state.source}
               onChange={this.onChangSource}
               />
-        </div><br /><br />
+        </div><br />
 
         <div className="form-group">
           <input type="submit" value="Create Salary Record" className="btn btn-primary" style = {{background: '#5D3FD3'}}/>
