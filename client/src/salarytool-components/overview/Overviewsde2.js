@@ -22,8 +22,8 @@ export default class Overviewsde1 extends Component {
       }
     
       componentDidMount() {
-        axios.get('http://localhost:4000/salarys-sde2/')
-        // axios.get('https://software-developer-salary-tool.herokuapp.com/salarys-sde2/')
+        // axios.get('http://localhost:4000/salarys-sde2/')
+        axios.get('https://software-developer-salary-tool.herokuapp.com/salarys-sde2/')
           .then(response => {
             this.setState({ salarys: response.data })
           })

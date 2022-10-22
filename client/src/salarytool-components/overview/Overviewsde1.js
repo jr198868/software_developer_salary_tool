@@ -23,8 +23,8 @@ export default class Overviewsde1 extends Component {
       }
     
       componentDidMount() {
-        axios.get('http://localhost:4000/salarys/')
-        // axios.get(' https://software-developer-salary-tool.herokuapp.com/salarys/')
+        // axios.get('http://localhost:4000/salarys/')
+        axios.get(' https://software-developer-salary-tool.herokuapp.com/salarys/')
           .then(response => {
             this.setState({ salarys: response.data })
           })

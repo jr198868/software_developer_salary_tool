@@ -20,7 +20,6 @@ const Salary = props => (
 
 export default class SalaryListsde2 extends Component {
 
-
   
   constructor(props) {
     super(props);
@@ -31,7 +30,8 @@ export default class SalaryListsde2 extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:4000/salarys-sde2/')
+    axios.get("https://software-developer-salary-tool.herokuapp.com/salarys-sde2/")
+    // axios.get('http://localhost:4000/salarys-sde2/')
       .then(response => {
         this.setState({ salarys: response.data })
       })
@@ -41,7 +41,8 @@ export default class SalaryListsde2 extends Component {
   }
 
   deleteSalary(id) {
-    axios.delete('http://localhost:4000/salarys-sde2/'+id)
+    axios.delete("https://software-developer-salary-tool.herokuapp.com/salarys-sde2/"+id)
+    // axios.delete('http://localhost:4000/salarys-sde2/'+id)
       .then(response => { console.log(response.data)});
 
     this.setState({
@@ -56,9 +57,6 @@ export default class SalaryListsde2 extends Component {
   }
 
   render() {
-
-
-
 
     return (
       <div>

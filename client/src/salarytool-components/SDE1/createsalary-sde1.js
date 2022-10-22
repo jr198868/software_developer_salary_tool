@@ -92,8 +92,8 @@ export default class CreateSalary extends Component {
 
     
 
-    axios.post('http://localhost:4000/salarys/add', salary)
-    // axios.post('https://software-developer-salary-tool.herokuapp.com/salarys/add', salary)
+    // axios.post('http://localhost:4000/salarys/add', salary)
+    axios.post('https://software-developer-salary-tool.herokuapp.com/salarys/add', salary)
       .then(res => console.log(res.data));
 
       alert('Salary has been successfully added');

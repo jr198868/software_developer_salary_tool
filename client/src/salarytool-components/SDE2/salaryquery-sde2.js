@@ -38,8 +38,8 @@ export default function Salary_query() {
 
   const [salaryquery, setSalaryquery] = useState([])
   const fetchData_salaryquery = () => {
-    fetch("http://localhost:4000/salarys-sde2/")
-    // fetch("https://software-developer-salary-tool.herokuapp.com/salarys-sde2/")
+    // fetch("http://localhost:4000/salarys-sde2/")
+    fetch("https://software-developer-salary-tool.herokuapp.com/salarys-sde2/")
       .then(response => {
         return response.json()
       })

@@ -6,8 +6,8 @@ import { BarChart, Line, Area, ComposedChart, Bar, CartesianGrid, Legend, XAxis,
 export default function Overview_index () {
 const [salarymost, setSalarymost] = useState([])
 const fetchData_salarymost = () => {
-    fetch("http://localhost:4000/salarys-sde2/")
-  // fetch("https://software-developer-salary-tool.herokuapp.com/salarys-sde2/")
+  // fetch("http://localhost:4000/salarys-sde2/")
+   fetch("https://software-developer-salary-tool.herokuapp.com/salarys-sde2/")
     .then(response => {
       return response.json()
     })
