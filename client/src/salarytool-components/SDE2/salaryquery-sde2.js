@@ -76,7 +76,7 @@ export default function Salary_query() {
   const data = salaryquery;
 
   return (
-    <CacheProvider value={muiCache}>
+    <CacheProvider value={muiCache}><br /><br />
       <ThemeProvider theme={createTheme()}>
         <FormControl>
           <InputLabel id="demo-simple-select-label">

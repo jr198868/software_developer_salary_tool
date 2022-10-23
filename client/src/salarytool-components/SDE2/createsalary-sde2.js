@@ -170,7 +170,7 @@ export default class CreateSalarysde2 extends Component {
       <div>
         <Piechart passbase = {this.state.base} passbonus = {this.state.bonus} passstock = {this.state.stock}/>
       </div>
-    </div><br /><br />
+    </div>
     </div>
     )
   }
