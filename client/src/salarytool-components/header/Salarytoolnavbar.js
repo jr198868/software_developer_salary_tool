@@ -67,7 +67,7 @@ export default function BasicTabs() {
       </Box>
       <TabPanel value={value} index={0}>
         <Container>
-          <h5 style={{}}>The backend salary data will move to a local server (Raspberry Pi 4), due to free Heroku Postgres and Heroku Data for Redis® plans are no longer available </h5><br />
+          <h5 style={{}}>The backend salary data will move to a local server, due to free Heroku Postgres and Heroku Data for Redis® plans are no longer available </h5><br />
           <Row>
             <Col sm={6} style={{alignItems: 'left', justifyContent: 'left'}}>
               <Overviewsde1 />
