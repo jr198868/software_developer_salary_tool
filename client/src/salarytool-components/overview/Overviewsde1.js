@@ -24,7 +24,7 @@ export default class Overviewsde1 extends Component {
     
       componentDidMount() {
         // axios.get('http://localhost:4000/salarys/')
-        axios.get(' https://software-developer-salary-tool.herokuapp.com/salarys/')
+        axios.get('https://software-developer-salary-tool.herokuapp.com/salarys/')
           .then(response => {
             this.setState({ salarys: response.data })
           })
@@ -35,9 +35,6 @@ export default class Overviewsde1 extends Component {
       }
 
       salaryList() {
-
-
-
 
         for (let i = 0; i<this.state.salarys.length; i++) {
             for (let j = 0; j<Object.entries(this.state.salarys).length; j++) {
@@ -55,8 +52,7 @@ export default class Overviewsde1 extends Component {
             }
             
         }
-        
-        
+                
         return this.state.salarys.map(currentsalary => {
             return <Salary salary={currentsalary} key={currentsalary._id}/>;
         
